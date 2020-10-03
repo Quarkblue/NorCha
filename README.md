@@ -7,4 +7,6 @@ and ofcourse the DataBase is mine and you can create yours too by going to mongo
 with your own connection link in the line **9** in the DB.py file and if you want to deploy this over WAN then you may have to install ngrok and run it for *http* service on the port *5000* 
 and then you can deploy it over WAN and share the link given given by the ngrok to your friends or whoever you want ;)
 
+just run the main.py file and
+
 yay you are ready to deploy the chat server :D
