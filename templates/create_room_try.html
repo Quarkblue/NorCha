@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Create Room</title>
+      <link rel="icon" href="{{ url_for('static', filename='norcha.png') }}" type="image/gif" sizes="16x16">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='create_room_try.css') }}">
+</head>
+<body>
+<img id="logo" src="{{ url_for('static', filename='logo1.png') }}" height="150px">
+<h3>{{ message }}</h3>
+<form class="box" method="post">
+    <h1>Create Room</h1>
+    <input type="text" id="room_name" name="room_name" placeholder="Room Name">
+    <input type="text" id="members" name="members" placeholder="Members">
+    <h5>Pls separate the names for Members by a ','</h5>
+    <input type="submit" value="Create">
+    <a id="cancel" href="/">Cancel</a>
+</form>
+</body>
+</html>

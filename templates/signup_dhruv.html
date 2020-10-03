@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+      <link rel="icon" type="image/png" href="{{ url_for('static', filename='norcha.png') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+<form>
+    <div class="wrapper">
+       <div class="first">
+           <img src="{{ url_for('static', filename='logo1.png') }}" height="150px">
+           <h5 align="center">{{ message }}</h5>
+       </div>
+    </div>
+</form>
+<form method="post" action="/signup">
+    <div class="container">
+        <h2>Sign Up Form</h2>
+        <input id="username" type="text" name="username" placeholder="Enter your username">
+        <input id="email" type="email" name="email" placeholder="Enter your email">
+        <input id="password" type="password" name="password" placeholder="Enter your password">
+        <button type="submit">Sign Up</button>
+    </div>
+</form>
+<button onclick="document.location='/'" type="submit" id="cancel">Cancel</button>
+</body>
+</html>
