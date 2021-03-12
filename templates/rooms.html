@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='rooms.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/gif" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rooms</title>
+    <!-- <style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .topnav {
+        background-color: #ff000000;
+    }
+    .topnav a {
+        float: left;
+        width: 17%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 21px;
+    }
+    .topnav a:hover {
+        background-color: #3330;
+        color: white;
+        transition: 0.7s all
+    }
+    .topnav a.active {
+        background-color: #ffffff;
+        color: black;
+    }
+    .topnav a.active:hover{
+      color: white;
+        background-color: #3330
+    }
+    #room{
+      background-color: #3330;
+      color: white;
+    }
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="/">Home</a>
+    {% if current_user.is_authenticated %}
+    <a href="/logout">Logout</a>
+    <a href="/create-room/">Create Room</a>
+    <a id="room" href="/room">Rooms</a>
+    {% endif %}
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="/create-room">Create Room</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="/room">Rooms</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link active" aria-current="page" href="/aboutus">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br>
+<br>
+<br>
+<h2>{{ message }}</h2>
+<ul>
+    {% for room in rooms %}{% if rooms == 0 %}{% else %}
+    <li class="box">
+        <a href="/rooms/{{ room._id.room_id }}/">{{ room.room_name }}</a>
+        <a href="/rooms/{{ room._id.room_id }}/edit">Edit</a>
+        <a id="delete" href="/delete_room/{{ room._id.room_id }}/">Delete Room</a>
+    </li>
+    {% endif %}{% endfor %}
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
