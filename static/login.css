@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180vh;
+    background: #031321;
+    font-family: consolas;
+    background: #34495e;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  float: left;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.box input[type = "submit"]:hover{
+    color: #255784;
+    background: #2ecc71;
+    box-shadow: 0 0 5px #2ecc71, 0 0 20px #2ecc71, 0 0 40px #2ecc71;
+
+
+}
+#cancel{
+  text-decoration: none;
+  position: absolute;
+  top: 67%;
+  left: 57%;
+  float: right;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid red;
+  padding: 11px 30px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+#cancel:hover{
+  color: #840404;
+  background: red;
+  box-shadow: 0 0 5px red, 0 0 20px red, 0 0 40px red;
+}
+
+h4{
+  color: black;
+  position: absolute;
+  left: 43%;
+  top: 80%;
+  color: white;
+}
+
+a{
+  position: absolute;
+  top: 85%;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: none;
+  letter-spacing: none;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  font-family: cursive;
+
+}
+
+#logo{
+  position: absolute;
+  top: 30%;
+  left: 19%;
+}
+h3{
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  font-size: 21px;
+  font-family: monospace;
+  color: black;
+}
+
+
+
+/*a:hover{
+  color: #175632;
+  background: #2196f3;
+  box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+  transition-delay: 1s;
+}
+
+
+a span{
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+a span:nth-child(2) {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #2196f3);
+}
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}*/

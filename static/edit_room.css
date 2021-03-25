@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180vh;
+    background: #031321;
+    background: #34495e;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[name="room_name"], .box input[name="members"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[name="room_name"]:focus, .box input[name="members"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  float: left;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.box input[type = "submit"]:hover{
+    color: #255784;
+    background: #2ecc71;
+    box-shadow: 0 0 5px #2ecc71, 0 0 20px #2ecc71, 0 0 40px #2ecc71;
+}
+#cancel{
+  text-decoration: none;
+  position: absolute;
+  top: 67%;
+  left: 57%;
+  float: right;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid red;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+#cancel:hover{
+  color: #840404;
+  background: red;
+  box-shadow: 0 0 5px red, 0 0 20px red, 0 0 40px red;
+}
+#logo{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+h3{
+  position: absolute;
+  top: 55%;
+  left: 16%;
+  font-size: 21px;
+  font-family: sans-serif;
+  color: black;
+}
